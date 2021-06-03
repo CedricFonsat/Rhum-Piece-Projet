@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>
-			{% block title %}Welcome!
-			{% endblock %}
-		</title>
-		<link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-		{# Run `composer require symfony/webpack-encore-bundle`
-		          and uncomment the following Encore helpers to start using Symfony UX #}
-		{% block stylesheets %}
-			<link
-			rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+        <link rel="stylesheet" href="{{asset('assets/css/purecookie.css')}}">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="{{asset('assets/js/purecookie.js')}}"></script>
+        {# Run `composer require symfony/webpack-encore-bundle`
+           and uncomment the following Encore helpers to start using Symfony UX #}
+        {% block stylesheets %}
+                 <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+
+            {#{{ encore_entry_link_tags('app') }}#}
+        {% endblock %}
 
 		{#{{ encore_entry_link_tags('app') }}#}
-		{% endblock %}
 
 		{% block javascripts %}
 		<script src="{{asset('assets/js/script.js')}}"></script>
@@ -27,9 +31,22 @@
 			    </head>
           
 			    <body>
+
             <header>
-			      <!-- nav -->
-			      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+         <img class="d-block w-100" src="{{asset('assets/images/logoblackgiant.png')}}" alt="">
+
+
+
+<nav>
+  <a class="items" href="">Rhumggg</a>
+  <a class="items" href="">Rhummhhh</a>
+  <div id="logo"><a href="paged'acueil"><img src="logo.png" alt="" srcset=""></a></div>
+  <a class="items" href="">Autohene ehhehe</a>
+  <a class="items" href=""><i class="fas fa-user"></i></a>
+</nav>
+
+			      <!-- nav 
+			      <nav class="navbar navbar-expand-lg navbar-dark bg-primary nav">
 			          <div class="container-fluid">
 			            <a class="navbar-brand" href="#">Navbar</a>
 			            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,30 +63,33 @@
 			                <li class="nav-item">
 			                  <a class="nav-link" href="#">Features</a>
 			                </li>
+                      <!-- logo -->
+
+                      <!-- logo -->
+                      <!--nav suite
 			                <li class="nav-item">
-			                  <a class="nav-link" href="#">Pricing</a>
+			                  <a class="nav-link" href="#">Rhums Blancs</a>
 			                </li>
 			                <li class="nav-item">
-			                  <a class="nav-link" href="#">About</a>
+			                  <a class="nav-link" href="#">Rhums Vieux</a>
 			                </li>
 			                <li class="nav-item dropdown">
-			                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+			                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Autour du rhums</a>
 			                  <div class="dropdown-menu">
-			                    <a class="dropdown-item" href="#">Action</a>
-			                    <a class="dropdown-item" href="#">Another action</a>
-			                    <a class="dropdown-item" href="#">Something else here</a>
-			                    <div class="dropdown-divider"></div>
-			                    <a class="dropdown-item" href="#">Separated link</a>
+			                    <a class="dropdown-item" href="#">Rhum arrangé</a>
+			                    <a class="dropdown-item" href="#">Sacs</a>
+			                    <a class="dropdown-item" href="#">Décanteur</a>
+			                    <a class="dropdown-item" href="#">Verres</a>
 			                  </div>
 			                </li>
 			              </ul>
-			              <form class="d-flex">
+			              <!-- <form class="d-flex">
 			                <input class="form-control me-sm-2" type="text" placeholder="Search">
 			                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-			              </form>
-			            </div>
+			              </form> -->
+			            <!-- </div>
 			          </div>
-			        </nav>
+			        </nav> -->
 			      <!-- pop up -->
 			     <header>
 			
@@ -85,7 +105,8 @@
 			
 			<i class="fab fa-instagram-square">instagram</i>
 			       
-			      
+			     			<a class="mention-legal" href="{{path('mention_legal')}}">Mention légale</a>
+ 
 			
 			
 			

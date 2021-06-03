@@ -36,6 +36,14 @@ class RhumPieceController extends AbstractController
         return $this->render('rhum_piece/error.html.twig');
     }
 
+    /**
+     * @Route("/mention_legal", name="mention_legal")
+     */
+    public function mentionlegal()
+    {
+        return $this->render('rhum_piece/mention_legal.html.twig');
+    }
+
 
      /**
      * @Route("/create-checkout-session", name="checkout")

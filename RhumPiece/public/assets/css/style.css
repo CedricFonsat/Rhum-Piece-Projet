@@ -1,4 +1,59 @@
-img{
-    width: 50%;
-    margin-left: 20%;
+#carouselExampleControls{
+
+    width: 100vw;
+    position: absolute !important;
+    z-index: -1 !important;
+    top: 0;
+   
+    
 }
+.nav {
+    /* color: black !important; */
+opacity: 0.0 !important;
+}
+.nav-link{
+    color: black !important;
+}
+#navbarColor01{
+    /* background-color:black; */
+}
+.d-flex button{
+    background-color: red;
+}
+footer{
+    height: 200px;
+    color: white;
+    background-color: rgb(82, 65, 68);
+}
+/* <style> */
+    html, body{
+  height: 100%;
+}
+body{
+  margin: 0;
+}
+nav{
+  display: flex;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+}
+.items{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 40px;
+}
+#logo{
+  width: 100px;
+  height: -100%;
+}
+img{
+  width: 100%;
+}
+.test{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+  
